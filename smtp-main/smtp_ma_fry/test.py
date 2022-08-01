@@ -30,7 +30,7 @@ import pandas
 
 from main import rass
 import time
-excel_data_df = pandas.read_excel('Рассылка (7).xlsx', sheet_name='Маги Программирование')
+excel_data_df = pandas.read_excel('Рассылка (10).xlsx', sheet_name='2 ПОТОК')
 
 # print whole sheet data    
 print(excel_data_df)
@@ -39,11 +39,11 @@ mail = rass()
 for i, row in excel_data_df.iterrows():
     pass
     if row['Почта'] != None:
-        mail.sendMail(row['Почта'])
+        #mail.sendMail(row['Почта'])
         pass
 
 
 
-mail.sendMail('laa@urtisi.ru')
+#mail.sendMail('gmv@urtisi.ru')
 
 
